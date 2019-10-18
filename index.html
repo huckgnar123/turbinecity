@@ -4,7 +4,7 @@
 <style>
  body {
   color: white;
-  background-color: goldenrod;
+  background-color: gray;
   font-size: 1.3em;
   margin-left: 30%;
   margin-right:30%;
@@ -103,13 +103,13 @@ var advanceTo = function(s) {
 scenario = {}
 var scenario = {
   one: {
-    image: "https://i.pinimg.com/originals/30/34/1d/30341d06fc7eba258b3b98644a7628af.jpg", //boat
-    text: "Welcome Hero! You wake up on an airship. All you know is that you are ready to adventure. What should we call you?",
+    image: "https://blogs.uoregon.edu/hadsellsteampunk/files/2015/10/fanart3-1sbunis.jpg", //steam punk
+    text: "It's a cold, quiet night in Turbine City. The streets are alive with the swirling color of Autumn leaves hurried along by the breeze. The steady rhythmic beat of the turbine blades can be heard high above, a comforting sound as each turn collects energy to power the splendid metropolis below. In the glow of the moonlight the mountain city looks like a silvered crown of some dead forgotten giant, or perhaps the giant merely slumbers and these are it's dreams... I give you Tales! From Turbine City!...What is your name adventurer?",
   },
   two: {
-    image: "https://s9.postimg.org/9p8m7v1u7/6899639786_d517c4cce3_z.jpg", //house
-    text: "Your name walks to a room inside the airship. It is cold with meat hanging from hooks attached to chains secured to the ceiling. They sway gently back and forth. You hear something grunting softly in a dark corner. What do you want to do?",
-    buttons: [["Turn and run", "advanceTo(scenario.three)"],["Check out corner", "advanceTo(scenario.four)"]]
+    image: ".jpg", //pic
+    text: "We find ourselves at the corner of Flatoil and Cog street. Looming above is a quaint apartment building. It is in the cold morning hours of predawn and a large, bald man wearing a non military sailor outfit wearily drags out a large black key and enters. He climbs 5 flights of stairs, his feet feel like lead. Reaching the green door of his apartment he pushes the key in the lock, with a click the thick wooden door opens revealing a messy, one bedroom apartment.",
+    buttons: [["Enter Apartment", "advanceTo(scenario.three)"]]
   },
   three: {
     image: "https://s4.postimg.org/t1g20apst/261819008_d4316c1bdf_o.jpg",
