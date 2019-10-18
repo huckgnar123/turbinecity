@@ -1,64 +1,158 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+ body {
+  color: white;
+  background-color: goldenrod;
+  font-size: 1.3em;
+  margin-left: 30%;
+  margin-right:30%;
+  font-family: 'Lato', sans-serif;
+}
+
+#images {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1em;
+}
+input {
+  width: 100%;
+  height: 30px;
+  text-align:center;
+  font-size: 1em;
+  margin-top:15px;
+}
+#buttonBox {
+  text-align:center;
+}
+button{
+  margin-left: 10px;
+  margin-top: 15px;
+  height: 22px;
+  font-size: 14px;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 580px) {
+	body {
+	  margin-right: 10%;
+    margin-left: 10%;
+    
+  }
+}   
+</style>    
+</head>
+    
+    
+    
 <body>
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
+<div id="images">
+</div>
+<div id="text">
+</div>
+
+<input id="input" onkeypress="submitDogName(this)" placeholder='Type Your Name and Enter to Begin'>
+<div id="buttonBox">
+</div>
+
+    
 <script>
     
-    var enterCabin = confirm("Darby comes to a cabin he found on craigslist to buy a boat. The door is open, does he go inside?");
+var images = document.getElementById("images");
+var text = document.getElementById("text");
+var buttonBox = document.getElementById('buttonBox');
+var input = document.getElementById('input');
+var yerdog;
 
-if(enterCabin == true) {
-//darby enter, true
-
-var boatChoice = prompt("You see a mysterious hermit with three hands. He says, I will give you the boat if you guess which hand the keys are in 1, 2 or 3.");
-
-if(boatChoice == 1) {
-alert("What the hell is wronng with you?! Get out.")
-
-}
-
-else if(boatChoice == 2) {
-alert("You choose poorly, Leave here.")
-
-}
-
-else {
-alert("Well done lad! Here you go, what could go wrong!?")
-
-
-
-var chatChoice = prompt("But before you go lad i have a question for you. Are you good, neutral or evil?")
-
-if(chatChoice == "evil") {
-alert("Two Humacorns come into the room. They look at you and you smile and turn into a humacorn. The world descends into darkness the likes which has never been seen before.")
-
-}
-
-else if(chatChoice == "neutral") {
-alert("Well thats pretty useless. Byeee.")
-
-}
-
-else {
-alert("Awesome! Good luck to you then. I predict a long life ahead of you. Boat! boat! boat! boat!")
+input.onkeypress = function(event) {
+  if (event.key == "Enter" || event.keyCode == 13) {
+    yerdog =  input.value;
+    input.parentNode.removeChild(input)
+    advanceTo(scenario.two)
   }
-}
+};
 
 
-}
-else {
-//darby doesnt, false
-alert("Darby does not go inside and goes home. The End.");
+var changeText = function(words) {
+  text.innerHTML = words.replace("Your name", yerdog);
+};
 
-}
+var changeImage = function(img) {
+  images.style.backgroundImage = "url(" + img + ")";
+};
+
+var changeButtons = function(buttonList) {
+  buttonBox.innerHTML = "";
+  for (var i = 0; i < buttonList.length; i++) {
+    buttonBox.innerHTML += "<button onClick="+buttonList[i][1]+">" + buttonList[i][0] + "</button>";
+  }
+};
+
+var advanceTo = function(s) {
+  changeImage(s.image)
+  changeText(s.text)
+  changeButtons(s.buttons)
+};
+
+
+scenario = {}
+var scenario = {
+  one: {
+    image: "https://i.pinimg.com/originals/30/34/1d/30341d06fc7eba258b3b98644a7628af.jpg", //boat
+    text: "Welcome Hero! You wake up on an airship. All you know is that you are ready to adventure. What should we call you?",
+  },
+  two: {
+    image: "https://s9.postimg.org/9p8m7v1u7/6899639786_d517c4cce3_z.jpg", //house
+    text: "Your name walks to a room inside the airship. It is cold with meat hanging from hooks attached to chains secured to the ceiling. They sway gently back and forth. You hear something grunting softly in a dark corner. What do you want to do?",
+    buttons: [["Turn and run", "advanceTo(scenario.three)"],["Check out corner", "advanceTo(scenario.four)"]]
+  },
+  three: {
+    image: "https://s4.postimg.org/t1g20apst/261819008_d4316c1bdf_o.jpg",
+    text: "You turn to run out the door but it slams shut. You get bored and decide to check out that grunting",
+    buttons: [["continue", "advanceTo(scenario.four)"]]
+  },
+  four: {
+    image: "https://s6.postimg.org/kz5m1cnkh/2919478782_c343d14be6_b.jpg",
+    text: "As you walk over to the corner a man rises up and says, 'hey guys, im tokyo sexwhale! Lets party!' ",
+    buttons: [["Start dancing", "advanceTo(scenario.five)"],["start stripping", "advanceTo(scenario.seven)"]]
+  },
+  five: {
+    image: "https://s6.postimg.org/kz5m1cnkh/2919478782_c343d14be6_b.jpg",
+    text: "Thats the spirit! Do you want to know who I am?",
+    buttons: [["Yes", "advanceTo(scenario.six)"],["No", "advanceTo(scenario.seven)"]]
+  },
+  six: {
+    image: "",
+    text: "I am Tokyo Sexwhale",
+    buttons: [["awesome", "advanceTo(scenario.eight)"],["I am Sancho", "advanceTo(scenario.eight)"]]
+  },
+  seven: {
+    image: "",
+    text: "No. You are dead. Start Over",
+    buttons: [["to be continued...", "advanceTo(scenario.nine)"],["to be continued", "advanceTo(scenario.nine)"],["button 3", "advanceTo(scenario.eight)"]]
+  },
+  eight: {
+    image: "",
+    text: "You win!!!!",
+    buttons: [["To be continued...", "advanceTo(scenario.nine)"],["To be continued...", "advanceTo(scenario.nine)"]]
+  },
+  nine: {
+    image: "",
+    text: "Test to see how much text i can fit.Its a cold quiet night in turbine city. yhe streets are alive with the swirling color of asutumn leaves hurried along bybnthe breeze. the steady rythmic beast of the turbine blades can be heard high above. this is tales from trurbine city!! i giove you tales! ",
+    buttons: [["To be continued...", "advanceTo(scenario.eight)"],["To be continued...", "advanceTo(scenario.eight)"]]
+  }    
+            
+  
+};
+
+advanceTo(scenario.one)
         
 </script>
-    
-<h2>Pick you own path epic journeys</h2>
-
-<p>
-A FearBoat Journey: Darby's big day out.
-</p>
-
-<img src="https://i.pinimg.com/originals/30/34/1d/30341d06fc7eba258b3b98644a7628af.jpg" alt="boat" style="width:300px;height:300px;">
 
     
     
