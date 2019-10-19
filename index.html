@@ -5,7 +5,7 @@
  body {
   color: white;
   background-color: gray;
-  font-size: 1.3em;
+  font-size: 1.1em;
   margin-left: 30%;
   margin-right:30%;
   font-family: 'Lato', sans-serif;
@@ -31,7 +31,7 @@ button{
   margin-left: 10px;
   margin-top: 15px;
   height: 35px;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 @media only screen 
@@ -108,7 +108,7 @@ var scenario = {
   },
   two: {
     image: ".jpg", //pic
-    text: "We find ourselves at the corner of Flatoil and Cog street. Looming above is a quaint apartment building. It is in the cold morning hours of predawn and a large, bald man wearing a non military sailor outfit wearily drags out a large black key and enters. He climbs 5 flights of stairs, his feet feel like lead. Reaching the green door of his apartment he pushes the key in the lock, with a click the thick wooden door opens revealing a messy, one bedroom apartment.",
+    text: "Hello Your name! We find ourselves at the corner of Flatoil and Cog street. Looming above is a quaint apartment building. It is in the cold morning hours of predawn and a large, bald man wearing a non military sailor outfit wearily drags out a large black key and enters. He climbs 5 flights of stairs, his feet feel like lead. Reaching the green door of his apartment he pushes the key in the lock, with a click the thick wooden door opens revealing a messy, one bedroom apartment.",
     buttons: [["Enter Apartment", "advanceTo(scenario.three)"]]
   },
   three: {
@@ -122,7 +122,7 @@ var scenario = {
     buttons: [["get up and investigate noise", "advanceTo(scenario.five)"],["try to get some sleep", "advanceTo(scenario.seven)"]]
   },
   five: {
-    image: "https://s6.postimg.org/kz5m1cnkh/2919478782_c343d14be6_b.jpg",
+    image: ".jpg",
     text: "Thats the spirit! Do you want to know who I am?",
     buttons: [["Yes", "advanceTo(scenario.six)"],["No", "advanceTo(scenario.seven)"]]
   },
@@ -133,8 +133,8 @@ var scenario = {
   },
   seven: {
     image: "",
-    text: "No. You are dead. Start Over",
-    buttons: [["to be continued...", "advanceTo(scenario.nine)"],["to be continued", "advanceTo(scenario.nine)"],["button 3", "advanceTo(scenario.eight)"]]
+    text: "I'm Sorry, you have failed",
+    buttons: [["to be continued...", "advanceTo(scenario.two)"],["to be continued", "advanceTo(scenario.two)"],["I have not!", "advanceTo(scenario.eight)"]]
   },
   eight: {
     image: "",
@@ -143,8 +143,8 @@ var scenario = {
   },
   nine: {
     image: "",
-    text: "Test to see how much text i can fit.Its a cold quiet night in turbine city. yhe streets are alive with the swirling color of asutumn leaves hurried along bybnthe breeze. the steady rythmic beast of the turbine blades can be heard high above. this is tales from trurbine city!! i giove you tales! ",
-    buttons: [["To be continued...", "advanceTo(scenario.eight)"],["To be continued...", "advanceTo(scenario.eight)"]]
+    text: "I already said you won",
+    buttons: [["To be continued...", "advanceTo(scenario.two)"],["To be continued...", "advanceTo(scenario.two)"]]
   }    
             
   
