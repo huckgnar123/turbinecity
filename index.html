@@ -109,11 +109,11 @@ var advanceTo = function(s) {
 scenario = {}
 var scenario = {
   one: {
-    image: "https://blogs.uoregon.edu/hadsellsteampunk/files/2015/10/fanart3-1sbunis.jpg", //steam punk
+    image: "https://media1.tenor.com/images/8ec126a0060b7b28eb31086d037b507d/tenor.gif?itemid=5969410", //steam punk
     text: "It's a cold, quiet night in Turbine City. The streets are alive with the swirling color of Autumn leaves hurried along by the breeze. The steady rhythmic beat of the turbine blades can be heard high above, a comforting sound as each turn collects energy to power the splendid metropolis below. In the glow of the moonlight the mountain city looks like a silvered crown of some dead forgotten giant, or perhaps the giant merely slumbers and these are it's dreams... I give you Tales! From Turbine City!...What is your name adventurer?",
   },
   two: {
-    image: ".jpg", //pic
+    image: "https://blogs.uoregon.edu/hadsellsteampunk/files/2015/10/fanart3-1sbunis.jpg", //pic
     text: "Hello Your name! We find ourselves at the corner of Flatoil and Cog street. Looming above is a quaint apartment building. It is in the cold morning hours of predawn and a large, bald man wearing a non military sailor outfit wearily drags out a large black key and enters. He climbs 5 flights of stairs, his feet feel like lead. Reaching the green door of his apartment he pushes the key in the lock, with a click the thick wooden door opens revealing a messy, one bedroom apartment.",
     buttons: [["Enter Apartment", "advanceTo(scenario.three)"]]
   },
@@ -128,9 +128,9 @@ var scenario = {
     buttons: [["get up and investigate noise", "advanceTo(scenario.five)"],["try to get some sleep", "advanceTo(scenario.six)"]]
   },
   five: {
-    image: "http://38.media.tumblr.com/53ea3fc5357c425d2ef2ac3e7a3ef7c0/tumblr_lsa8wmwnuN1r3tvt7o1_r2_500.gif",
-    text: "You rise from your 2 minute slumber and creep into the kitchen. You see the kitchen window is shattered on the tiled floor and the curtains are dancing in the cool morning breeze. Amongst the shards of glass you see what looks like a delivery box from the food service F.T.F.F.F.D.S. The smell of blueberry pie fills the air. You stand on the cold tiles of your kitchen floor trying to avoid the broken glass. Exhausted and confused you stare in bewilderment. The smell of blueberry pie begins to make your mouth water. Suddenly you hear from the apartment next door a very husky voice exclaim 'Shit! They missed my window!' You have never met your neighbor, but then working 2 jobs doesn't leave much room for socializing. You hear heavy grunting and wheezing as you feel the floor boards vibrate. You hear heavy footfalls rattle the apartment with each step. You hear a door open in the hall and the sounds of a struggle that seems to stretch on for an hour. The cacophony continues down the hallway and stops at your door. A labored voice says 'Sex...whale!... Are... You... In... There...?'",
-    buttons: [["answer the door", "advanceTo(scenario.eight)"],["ignore", "advanceTo(scenario.eight)"],["make love to the pie","advanceTo(scenario.seven)"]]
+    image: "https://i.pinimg.com/originals/88/df/b4/88dfb4df76af53f5daad8d1427dfee2a.jpg",
+    text: "You rise from your 2 minute slumber and creep into the kitchen. You see the kitchen window is shattered on the tiled floor and the curtains are dancing in the cool morning breeze. Amongst the shards of glass you see what looks like a delivery box from the food service F.T.F.F.F.D.S. The smell of blueberry pie fills the air. You stand on the cold tiles of your kitchen floor trying to avoid the broken glass. Exhausted and confused you stare in bewilderment. The smell of blueberry pie begins to make your mouth water.",
+    buttons: [["continue", "advanceTo(scenario.fivea)"]]
   },
   six: {
     image: ".jpg",
@@ -151,7 +151,12 @@ var scenario = {
     image: ".jpg",
     text: "I already said you won",
     buttons: [["To be continued...", "advanceTo(scenario.two)"],["To be continued...", "advanceTo(scenario.two)"]]
-  }    
+  },
+  fivea: {
+    image: ".gif",
+    text: "Suddenly you hear from the apartment next door a very husky voice exclaim 'Shit! They missed my window!' You have never met your neighbor, but then working 2 jobs doesn't leave much room for socializing. You hear heavy grunting and wheezing as you feel the floor boards vibrate. You hear heavy footfalls rattle the apartment with each step. You hear a door open in the hall and the sounds of a struggle that seems to stretch on for an hour. The cacophony continues down the hallway and stops at your door. A labored voice says 'Sex...whale!... Are... You... In... There...?'",
+    buttons: [["answer the door", "advanceTo(scenario.eight)"],["ignore", "advanceTo(scenario.eight)"],["make love to the pie","advanceTo(scenario.seven)"]]
+  }
             
   
 };
