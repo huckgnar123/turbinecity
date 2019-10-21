@@ -135,7 +135,7 @@ var scenario = {
   six: {
     image: ".jpg",
     text: "You fall back asleep despite the loud noise in the kitchen. You awake several hours later to the sounds of what you think to be a hog coming from your kitchen.",
-    buttons: [["to be cont...", "advanceTo(scenario.eight)"],["to be cont...", "advanceTo(scenario.eight)"]]
+    buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
   },
   seven: {
     image: ".jpg",
@@ -145,20 +145,43 @@ var scenario = {
   eight: {
     image: ".jpg",
     text: "You open the door to find the baldest, fattest man, nay thing you have ever seen. He must weigh 1,000 lbs if he is an ounce. His bloated face sits atop a column of chins, perched atop an immense mountain of a body. His dark sunken eyes begin scanning the room frantically. 'Did... You... Get... My... Pie... Delivery... By... Mistake?'",
-    buttons: [["lie about the pie", "advanceTo(scenario.two)"],["give him the pie", "advanceTo(scenario.two)"]]
+    buttons: [["lie about the pie", "advanceTo(scenario.ten)"],["give him the pie", "advanceTo(scenario.thirteen)"]]
   },
   nine: {
-    image: ".jpg",
+    image: ".jpg", //A1-2
     text: "You stand in the kitchen ignoring the query. Heavy, wheezy breathing continues followed by something large trying to bash its way in to your apartment. The walls shake, and plaster begins flaking from the walls. The sound of groaning, splintering wood can be heard, bash after bash into the door. The door frame makes one last desperate creak before exploding open! The door falls flat and an enormous... Man? oozes into the broken door way onto the door. You cannot see over the mountain of flesh before you. His relatively tiny head looks up at you regrettably and asks 'Do... You... Have... My... Pie?'",
-    buttons: [["lie about the pie", "advanceTo(scenario.two)"],["give him the pie", "advanceTo(scenario.two)"]]
+    buttons: [["lie about the pie", "advanceTo(scenario.ten)"],["give him the pie", "advanceTo(scenario.thirteen)"]]
   },
   fivea: {
     image: ".gif",
     text: "Suddenly you hear from the apartment next door a very husky voice exclaim 'Shit! They missed my window!' You have never met your neighbor, but then working 2 jobs doesn't leave much room for socializing. You hear heavy grunting and wheezing as you feel the floor boards vibrate. You hear heavy footfalls rattle the apartment with each step. You hear a door open in the hall and the sounds of a struggle that seems to stretch on for an hour. The cacophony continues down the hallway and stops at your door. A labored voice says 'Sex...whale!... Are... You... In... There...?'",
     buttons: [["answer the door", "advanceTo(scenario.eight)"],["ignore", "advanceTo(scenario.nine)"],["make love to the pie","advanceTo(scenario.seven)"]]
+  },
+  ten: {
+    image: ".jpg", //A!-2-1
+    text: "You lie to the grotesquely fat man, 'Nope, no pie here'. He looks at the floor with heavy disappointment. 'Sorry... To... Bother... You... I... Will... Look... Next... Door...' he says at he shifts his massive bulk and begins to pudding down the hall. You shut the door, glancing down at the pie. Hoping to get a little more rest you head back to bed. No sooner do you shut your eyes when you hear a commotion from the next door neighbor, a shapely woman in her 20's named Claire. 'Oh my God! What do you want!' exclaims a fearful female voice. A husky, slow voice responds 'I... Think... You... Have... My... Pie.' 'No pie here fatty!' retorts Claire. The husky voice turns angry 'YOU... MUST... HAVE... IT!!! YOU... ARE... THE... LAST... APARTMENT... ON... THE... FLOOR! *WHEEEZE!' After which the apartment building begins to shake as what sounds to be a scuffle ensues. The floor boards groan with protest, while picture frames fall off the walls of your apartment! Claire screams 'Get away from that tubby! That is a gas ma-' Claire's voice is cut short by a shrill scream and explosion! Suddenly flames explode through the kitchen wall engulfing everything in flames!",
+    buttons: [["try to help Claire", "advanceTo(scenario.eleven)"],["go down fire escape", "advanceTo(scenario.twelve)"]]
+  },
+  eleven: {
+    image: ".jpg",
+    text: "You decide to try and help Claire. You rush through the hole in the kitchen, choking on thick black smoke as you frantically search for signs of life. You can't make out anything in the gold and red of the inferno. Your eyes become heavy and you feel tired as you succumb to the smoke. Luckily, you didn't get a chance to feel your self burn! (Your journey ends here.)",
+    buttons: [["continue", "advanceTo(scenario.two)"],["continue", "advanceTo(scenario.two)"]]
+  },
+  twelve: {
+    image: ".jpg",
+    text: "You grab what little you can and throw it in a backpack near your bed. You quickly cross the room to the window and open it to the waiting fire escape. You pull yourself through the window and scramble down to the street. No sooner do your feet touch pavement than another explosion knocks you to your feet. Debris rains down around you as your apartment is completely immoliated. You are now homeless...",
+    buttons: [["continue", "advanceTo(scenario.two)"],["continue", "advanceTo(scenario.two)"]]
+  },
+  thirteen: {
+    image: ".jpg",
+    text:  "You pick the pie box from the floor and are about to hand it to the large gentleman in your doorway when he uncontrollably lunges at the pie. His girth spills into the room, knocking you down with his mass. Like an animal he tears through the wrapping and begins to shove fistfuls of crust and sugary berries into his mouth. He nearly chokes as he inhales the purple mess. After what seems like seconds he looks up with a smile, burps long and deep, then squeaks out a tiny fart. He giggles and then begins to asses the situation. 'You... Should... Call... The... Fire... Brigade... I... Don't... Think... I'm... Getting... Up.'",
+    buttons: [["continue", "advanceTo(scenario.fourteen)"]]    
+  },
+  fourteen: {
+    image: ".jpg",
+    text: "Before you can reach your phone a terrible sound can be heard from under the large man's body. The floor begins to creak and groan like an old ship. The fat man looks up with his now purple face and whispers nervously 'Did... You... Hear... That..?' You nod yes as the floor gives way in an eruption of splinters. The fat man begins to sink into the floor like bread dough being flushed down a toilet. He futility waves his barrel sized arms as he falls through, crashing on the neighbors below! The sounds of broken furniture and glass can be heard followed by frightened screams! The chorus grows as he falls through floor after floor finally landing in the basement. He emits a beefy 'Oof!' as he comes to an abrupt halt. Confused chatter is in the air and sirens can be heard in the distance. You pack a few things and climb down the fire escape. You are now homeless.",
+    buttons: [["continue", "advanceTo(scenario.two)"],["continue", "advanceTo(scenario.two)"]]  
   }
-            
-  
 };
 
 advanceTo(scenario.one)
