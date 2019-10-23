@@ -68,7 +68,7 @@ and (max-device-width : 580px) {
 <div id="text">
 </div>
 
-<input id="input" onkeypress="submitDogName(this)" placeholder='Type Your Name and Enter to Begin'>
+<input id="input" onkeypress="submitDogName(this)" placeholder='Enter your name to start'>
 <div id="buttonBox">
 </div>
 
@@ -141,7 +141,7 @@ var scenario = {
   six: {
     image: ".jpg",
     text: "You fall back asleep despite the loud noise in the kitchen. You awake several hours later to the sounds of what you think to be a hog coming from your kitchen.",
-    buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
+    buttons: [["continue", "advanceTo(scenario.fifteen)"]]
   },
   seven: {
     image: ".jpg",
@@ -187,7 +187,84 @@ var scenario = {
     image: ".jpg",
     text: "Before you can reach your phone a terrible sound can be heard from under the large man's body. The floor begins to creak and groan like an old ship. The fat man looks up with his now purple face and whispers nervously 'Did... You... Hear... That..?' You nod yes as the floor gives way in an eruption of splinters. The fat man begins to sink into the floor like bread dough being flushed down a toilet. He futility waves his barrel sized arms as he falls through, crashing on the neighbors below! The sounds of broken furniture and glass can be heard followed by frightened screams! The chorus grows as he falls through floor after floor finally landing in the basement. He emits a beefy 'Oof!' as he comes to an abrupt halt. Confused chatter is in the air and sirens can be heard in the distance. You pack a few things and climb down the fire escape. You are now homeless.",
     buttons: [["continue", "advanceTo(scenario.two)"],["continue", "advanceTo(scenario.two)"]]  
-  }
+  },
+  fifteen: {
+    image: ".jpg",
+    text: "You wander into the kitchen toward the gutteral hog like sounds. You round the corner to see a pile of flesh of a man frantically shoving blueberry pie into his greedy maw. You stand there aghast wondering how to proceed...",
+    buttons: [["shoo him away", "advanceTo(scenario.sixteen)"],["escape down the fire escape", "advanceTo(scenario.seventeen)"]]
+  },
+   sixteen: {
+    image: ".jpg",
+    text: "You lean in close and start waving your hands in his face saying 'Shoo piggy, shoo!'. In the feeding frenzy he scoops your hand into his mouth and bites off your fingers! Blood sprays everywhere, and mingles with the blueberry pie as he shovels it in. You see a crazed look in his eyes. A blood lust is upon him! He is able to grab your arm as you stand there stunned and eats the rest of your fingers, followed by your hand. Thankfully you black out by the time he reaches your elbow. And, if it's any consolation you gave him heart burn. (Your journey ends here)",
+    buttons: [["start again", "advanceTo(scenario.two)"]]
+   },
+   seventeen: {
+    image: ".jpg",
+    text: "You escape down the fire escape with a few belongings in your backpack and wander into the night. Hopefully that nightmare will be gone by the time you get back.",
+    buttons: [["continue", "advanceTo(scenario.eighteen)"]]
+   },    
+    eighteen: {
+    image: ".jpg",
+    text: "The first light of dawn paints the streets a dusky orange as you wander down Flatoil street. The city is waking up, street vendors are setting up booths, the friendly Constibals are walking their beats and the smell of freshly baked bread hangs heavy in the air. 'Crap!'' you exclaim as you realize you are very late for shift at Fine Mill Bakery uptown. At this point you would never make it there at a reasonable time, hopefully your boss Mr Caruthers will be understanding of your situation come Monday. The scent of the bread makes your stomach growl and you wonder if you shouldn't stop into the Greasy Gear diner down the street or head to the West side of town to see if you can crash on the couch of one of your Cabaret buddies.",
+    buttons: [["head to diner", "advanceTo(scenario.nineteen)"],["head to the West side", "advanceTo(scenario.two)"]]
+   },
+    nineteen: {
+    image: ".jpg",
+    text: "You decide some food would be good after all the excitement. You rummage through your coin purse and discover you only have a handful of 'Brass Cogs', the lowest denomination of The Empire but certainly enough for a slice of pie and cup of coffee. A short walk later you find yourself in front of the Greasy Gear diner. The chrome exterior of the classic diner is blinding in the morning light. You walk up a few steps and open the red door. The diner smells of grease and coffee. It is a fairly busy morning but you manage to find a seat at the counter. You set your backpack down and sit upon the red upholstered stool. An older waitress with a badly died up-do stomps over. Her name tag simply says 'Ma'. She says in a gravelly smokers voice 'Whatcha havin' hon?' You order a big slice of apple pie and a mug of coffee. While Ma retrieves your order a man in his mid thirties glances your way a few seats down. He sets down his fork next to his bacon and condor egg breakfast and asks...'Hey Pal! Why so glum?!'",
+    buttons: [["tell him your tale of woe", "advanceTo(scenario.two)"],["ignore him", "advanceTo(scenario.two)"]]
+   }, 
+    twenty: {
+    image: ".jpg",
+    text: "You fall back asleep despite the loud noise in the kitchen. You awake several hours later to the sounds of what you think to be a hog coming from your kitchen.",
+    buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
+   },
+    twentyone: {
+    image: ".jpg",
+    text: "You fall back asleep despite the loud noise in the kitchen. You awake several hours later to the sounds of what you think to be a hog coming from your kitchen.",
+    buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
+   },
+    twentytwo: {
+    image: ".jpg",
+    text: "You fall back asleep despite the loud noise in the kitchen. You awake several hours later to the sounds of what you think to be a hog coming from your kitchen.",
+    buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
+   },
+    twentythree: {
+    image: ".jpg",
+    text: "You fall back asleep despite the loud noise in the kitchen. You awake several hours later to the sounds of what you think to be a hog coming from your kitchen.",
+    buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
+   },
+    twentyfour: {
+    image: ".jpg",
+    text: "You fall back asleep despite the loud noise in the kitchen. You awake several hours later to the sounds of what you think to be a hog coming from your kitchen.",
+    buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
+   },
+    twentyfive: {
+    image: ".jpg",
+    text: "You fall back asleep despite the loud noise in the kitchen. You awake several hours later to the sounds of what you think to be a hog coming from your kitchen.",
+    buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
+   },
+    twentysix: {
+    image: ".jpg",
+    text: "You fall back asleep despite the loud noise in the kitchen. You awake several hours later to the sounds of what you think to be a hog coming from your kitchen.",
+    buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
+   },
+    twentyseven: {
+    image: ".jpg",
+    text: "You fall back asleep despite the loud noise in the kitchen. You awake several hours later to the sounds of what you think to be a hog coming from your kitchen.",
+    buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
+   },
+    twentyeight: {
+    image: ".jpg",
+    text: "You fall back asleep despite the loud noise in the kitchen. You awake several hours later to the sounds of what you think to be a hog coming from your kitchen.",
+    buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
+   },
+    
+    
+    
+    
+    
+    
+    
 };
 
 advanceTo(scenario.one)
