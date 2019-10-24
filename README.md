@@ -1,6 +1,7 @@
-# Welcome to GitHub
+# Hello there!
 
-Welcome to GitHub—where millions of developers work together on software. Ready to get started? Let’s learn how this all works by building and publishing your first GitHub Pages website!
+Welcome to the greatest pick your own path adventure ever! its got it all. Artwork, words, music and background images!
+Enter into a world of Steam and stories! Turbine City awaits you
 
 ## Repositories
 
