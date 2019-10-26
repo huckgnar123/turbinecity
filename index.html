@@ -63,7 +63,7 @@ and (max-device-width : 580px) {
 <body>
     
     <audio controls>
-    <source src="https://docs.google.com/uc?export=download&id=1eBBXwc2v2VdOH-MQHqumBhWQfOP8DxpC"
+    <source src="https://docs.google.com/uc?export=download&id=1X7EiWRx3Wg1uLtRaww582klUWYFrKjGl"
     type="audio/mpeg">         
     </audio>
     
@@ -117,6 +117,8 @@ var advanceTo = function(s) {
   changeButtons(s.buttons)
 };
 
+    
+
 
 scenario = {}
 var scenario = {
@@ -127,7 +129,7 @@ var scenario = {
   two: {
     image: "https://blogs.uoregon.edu/hadsellsteampunk/files/2015/10/fanart3-1sbunis.jpg", //pic
     text: "We find ourselves at the corner of Flatoil and Cog street. Looming above is a quaint apartment building. It is in the cold morning hours of predawn and a large, bald man wearing a non military sailor outfit wearily drags out a large black key and enters. He climbs 5 flights of stairs, his feet feel like lead. Reaching the green door of his apartment he pushes the key in the lock, with a click the thick wooden door opens revealing a messy, one bedroom apartment.",
-    buttons: [["Enter apartment", "advanceTo(scenario.three)"]]
+    buttons: [["Enter apartment", "advanceTo(scenario.three)"],["A Brief History of Turbine City", "advanceTo(scenario.m)"]]
   },
   three: {
     image: "https://lh3.googleusercontent.com/udYvTTl9nqSA7lvzneFAUBTVojezPAHOFsgghdVl4xzDo4NMNVhJ-hq2lURNz4XWmiT3NHW9j8-lqBCaoG3eKqIW0k7Rzd0EhCXbF_6NB7tR2JcjxpRs2kbYRNSKl-phUIH-EggbBTG2KIToG-kpwn6zPncnSJzIcAp8NFw5pRzXqd8u9iWSncy65FPAGC9n7ij422-oWJ2H3VdoUlPfPmmHExKMARuvxkl19aSwLOZ2-XYJAfc0a-o1-YJjlzEr6gfHfkitOC6tpkYuITckJQftOIH2OYIhuYB634JbCBbaFSZxBiuO0AeZLR6annVQtlotLKhYh_Lqy6_32aWBEQn_ypeJw9FCsNcdc6loc-_kgyFpZgQIyOSZ5fEX_OxFn0kYLf7THg5KdMv2f7zDQuHClekvSxBRQH9Up9ZCAUKIAZDbGS7fAhTg6sek7YKKpoyRtyayxlBx7TCuRDwi9tyT5EQI8N1uUlcuZAGKs6pt9hhxt0gNIBjVUmDWydfvYztKbP6WOA_1vqa8F-wF3mVuDqi3yoX6RtYUO8OxeZ8-O3akji-AqWcxmiK9VfnLFgKOLYRICGSZq3V9iXJiamHhaP475mLH3xZJl_Lg0mOj_IB01yLeo4gjXmDHh3r50NJwsfSZ7FoKC-K-t684rhsu9fK2XEpIiBGuckZqX19D28FekWMpmKU=w1440-h939-no",
@@ -335,9 +337,9 @@ var scenario = {
     buttons: [["to be cont...", "advanceTo(scenario.h)"]]
    },
     m: {
-    image: ".jpg",
-    text: "You fall back asleep despite the loud noise in the kitchen. You awake several hours later to the sounds of what you think to be a hog coming from your kitchen.",
-    buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
+    image: "https://vignette.wikia.nocookie.net/leagueoflegends/images/8/82/Noxus_The_Immortal_Bastion_01.jpg/revision/latest?cb=20181118145414",
+    text: "Welcome to Turbine City's hall of history! Before we begin just a quick overview of our beautiful city and how it came to be...<br> <br> Founded in the year 768 AR (After the Reckoning) as a mining outpost high above the Jungle Dark in the Gray Mountains, designation: Ore colony 278. It quickly blossomed into Ore Town, until finally maturing into our beloved Turbine City in the year 17 GER (Great Electrical Renaissance) so named for the grand Turbines high above us collecting and distributing the world's newest resource, electricity! Discovered by noted Scientist Dr. Phineus Derby VI, the citizens of Turbine City proudly use and display our advanced technologies. From the common pocket watch to the 'steam buggies' threatening the livelihood of the cities Equine Masters. <br> <br> In these prosperous times citizens are happy, well fed, and very well dressed. It is a point of pride to wear your very best double-breasted leather coat with matching top hat usually adorned with one or more useful gadget--such as Dr Derby's 'weather pin' a tidy little device, crafted of gears and such that can give a 60% accurate forecast of the chance of rain. Walking sticks are a popular accessory for the gents and 'razor fans' for the ladies. Beautiful fans crafted by noted designer Madame Ming, fashion with a deadly sharp edge (literally). Good for keeping breezes on a hot, still day or for keeping street toughs at bay in Blue Alley (not that a lady would travel to such a place...). <br> <br> There is so much to see and do in Turbine City! Take a ride in an airship over the Jungle Dark or a guided tour on a Yellow Trolley! Grab a bite in a charming cafe on the West Side or-A slice of The Greasy Gear's famous apple-blumpkin berry pie with a fresh cup of coffee on The East Side of our fair city! Welcome, and enjoy your visit!...",
+    buttons: [["Enter apartment with confidence!", "advanceTo(scenario.three)"]]
    },
     n: {
     image: ".jpg",
