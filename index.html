@@ -140,7 +140,7 @@ var scenario = {
     buttons: [["get up and investigate noise", "advanceTo(scenario.five)"],["try to get some sleep", "advanceTo(scenario.six)"]]
   },
   five: {
-    image: "https://i.pinimg.com/originals/88/df/b4/88dfb4df76af53f5daad8d1427dfee2a.jpg",
+    image: ".jpg",
     text: "You rise from your two minute slumber and creep into the kitchen. You see the kitchen window is shattered on the tiled floor and the curtains are dancing in the cool morning breeze. Amongst the shards of glass you see what looks like a delivery box from the food service F.T.F.F.F.D.S. The smell of blueberry pie fills the air. You stand on the cold tiles of your kitchen floor trying to avoid the broken glass. Exhausted and confused you stare in bewilderment. The smell of blueberry pie begins to make your mouth water.",
     buttons: [["continue", "advanceTo(scenario.fivea)"]]
   },
@@ -150,7 +150,7 @@ var scenario = {
     buttons: [["continue", "advanceTo(scenario.fifteen)"]]
   },
   seven: {
-    image: ".jpg",
+    image: "https://i.pinimg.com/originals/88/df/b4/88dfb4df76af53f5daad8d1427dfee2a.jpg",
     text: "Ignoring the terrifying sounds a strange compulsion overtakes you. You pick up the box, remove the steaming hot pie, and insert your rigid member. You black out from the pain and awake in the hospital. (Your journey ends here.)",
     buttons: [["try again perv", "advanceTo(scenario.two)"]]
   },
@@ -212,12 +212,12 @@ var scenario = {
     eighteen: {
     image: ".jpg",
     text: "The first light of dawn paints the streets a dusky orange as you wander down Flatoil street. The city is waking up, street vendors are setting up booths, the friendly Constibals are walking their beats and the smell of freshly baked bread hangs heavy in the air. 'Crap!'' you exclaim as you realize you are very late for shift at Fine Mill Bakery uptown. At this point you would never make it there at a reasonable time, hopefully your boss Mr Caruthers will be understanding of your situation come Monday. The scent of the bread makes your stomach growl and you wonder if you shouldn't stop into the Greasy Gear diner down the street or head to the West side of town to see if you can crash on the couch of one of your Cabaret buddies.",
-    buttons: [["head to diner", "advanceTo(scenario.nineteen)"],["head to the West side", "advanceTo(scenario.two)"]]
+    buttons: [["head to diner", "advanceTo(scenario.nineteen)"],["head to the West side", "advanceTo(scenario.twentyone)"]]
    },
     nineteen: {
     image: ".jpg",
     text: "You decide some food would be good after all the excitement. You rummage through your coin purse and discover you only have a handful of 'Brass Cogs', the lowest denomination of The Empire but certainly enough for a slice of pie and cup of coffee. A short walk later you find yourself in front of the Greasy Gear diner. The chrome exterior of the classic diner is blinding in the morning light. You walk up a few steps and open the red door. The diner smells of grease and coffee. It is a fairly busy morning but you manage to find a seat at the counter. You set your backpack down and sit upon the red upholstered stool. An older waitress with a badly died up-do stomps over. Her name tag simply says 'Ma'. She says in a gravelly smokers voice 'Whatcha havin' hon?' You order a big slice of apple pie and a mug of coffee. While Ma retrieves your order a man in his mid thirties glances your way a few seats down. He sets down his fork next to his bacon and condor egg breakfast and asks...'Hey Pal! Why so glum?!'",
-    buttons: [["tell him your tale of woe", "advanceTo(scenario.two)"],["ignore him", "advanceTo(scenario.twenty)"]]
+    buttons: [["tell him your tale of woe", "advanceTo(scenario.i)"],["ignore him", "advanceTo(scenario.twenty)"]]
    }, 
     twenty: {
     image: ".jpg",
@@ -227,7 +227,7 @@ var scenario = {
     twentyone: {
     image: ".jpg",
     text: "You begin the 10 mile trek to the West side. Half way through your journey you find you need to rest for a minute. Your sleep deprived body and throbbing, blister covered feet demanding respite. You lean against a gas lamp pole and begin surveying the area. A bright yellow trolley rolls past spraying sparks from the well travelled rails. You now wish you hadn't spent the last of your money on pie and coffee and opted to pay for a trolley ride instead. Across the cobblestone street you see what is unofficially known as 'Blue Alley'. The narrow street goes right through Mid-Town and is a shortcut to the West Side... It is also home to prostitutes, street toughs, and pimps. Not to mention speakeasies and opium dens. You wonder if you should continue the longer, safer path, or take the shorter more dangerous route...",
-    buttons: [["take the safe path", "advanceTo(scenario.two)"],["cut through Blue Alley", "advanceTo(scenario.twentytwo)"]]
+    buttons: [["take the safe path", "advanceTo(scenario.g)"],["cut through Blue Alley", "advanceTo(scenario.twentytwo)"]]
    },
     twentytwo: {
     image: ".jpg",
@@ -236,25 +236,150 @@ var scenario = {
    },
     twentythree: {
     image: ".jpg",
-    text: "Alligator Brown, a shorter slender man who more than makes up for it with confidence and style. He is a pimp's pimp. Unfortunately he recently lost all his hoes when Constibals raided his brothel. Time to rebuild. It's happened before it will happen again. On this fine morning a tall, muscly drink of water looking a little out of place is crossing his path...'Yo, dawg! Do you like them skins? How bout you be an earner for ol al brown, we are going to pound town on a silver ship of gold!",
-    buttons: [["lets fuck!!!", "advanceTo(scenario.two)"]]
+    text: "Alligator Brown, a shorter slender man who more than makes up for it with confidence and style. He is a pimp's pimp. Unfortunately he recently lost all his hoes when Constibals raided his brothel. Time to rebuild. It's happened before it will happen again. On this fine morning a tall, muscly drink of water just hapens by...'Hey Sweet thing, you look lost.' The words hang in the air as you look around trying to find the target of the 'compliment'... After a moment you realize it's you. The smarmy, well dressed man takes a step down and says 'Like a bee loves honey show Alligator Brown that sweet sweet money.' 'You want to make some motherfucking money? You know what I'm sayin', you tall muscly drink of water?' 'I have a list of bitches and faeries that would love a big man like you! You even gots your own motherfucking sailor costume! The John's love that shit! You know what I'm sayin'?'",
+    buttons: [["continue", "advanceTo(scenario.twentyfour)"]]
    },
     twentyfour: {
     image: ".jpg",
-    text: "You fall back asleep despite the loud noise in the kitchen. You awake several hours later to the sounds of what you think to be a hog coming from your kitchen.",
-    buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
+    text: "It slowly dawns on you that this Alligator fella' is a pimp and he is trying to make you his 'ho'. Your mind swirls as you try to sift through all the possibilities. On the one hand 'ho-ing' could provide the capital to get your puppet show going. On the other hand Tokyo Sexwhale is nobody's 'ho'.",
+    buttons: [["ignore him and keep walking", "advanceTo(scenario.thirty)"],["accept his proposal", "advanceTo(scenario.a)"],["whoop his ass", "advanceTo(scenario.twentyfive)"]]
    },
     twentyfive: {
     image: ".jpg",
-    text: "You fall back asleep despite the loud noise in the kitchen. You awake several hours later to the sounds of what you think to be a hog coming from your kitchen.",
-    buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
+    text: " Alligator Brown's words burn through you. Your fuse is short and that little shit lit it! You charge at the little pimp, fists clenched! Combat time!  <br> <br> Alligator Brown readies his walking cane like a bat. As you close on him he swings!  ",
+    buttons: [["Dodge left", "advanceTo(scenario.twentysix)"],["Dodge right", "advanceTo(scenario.twentyseven)"]]
    },
     twentysix: {
+    image: ".jpg",
+    text: "You dodge left... Right into Alligator's swing! Your head rings like a bell! You see stars and then nothing at all. (Your journey ends here)",
+    buttons: [["Start again", "advanceTo(scenario.two)"]]
+   },
+    twentyseven: {
+    image: ".jpg",
+    text: "You dodge right missing his swing throwing him off balance.",
+    buttons: [["Punch him in the throat", "advanceTo(scenario.twentyeight)"],["Fake a throat punch but kick him in the balls", "advanceTo(scenario.twentynine)"]]
+   },
+    twentyeight: {
+    image: ".jpg",
+    text: "You punch Alligator Brown in the throat. His windpipe collapses from the impact of your mighty fist. He falls to the pavement making sad mewling sounds as he grasps at his neck, his eyes wild with fear! A moment later he closes his eyes as he makes a sickening death rattle... And shits his expensive slacks. You are a murderer! Your luck goes from bad to worse when you realize a Constibal witnessed the whole scene. You are taken into custody, tried, and are the first person to be executed by electric chair in Turbine City. So, you made history anyway. (Your Journey ends here)",
+    buttons: [["Start over", "advanceTo(scenario.two)"]]
+   },
+    twentynine: {
+    image: ".jpg",
+    text: "You wind up like you are going to punch him in the throat but instead send you size 16 boot to his sack. You lift him 6 inches off the ground and he collapses in the fetal position grabbing his crotch weeping like a little girl. His voice sounds 3 octaves higher as he says 'You may have knocked me down, but I ain't no clown! I'm the finest pimp in-' his rhyme stops short as he blacks out. You continue your quest to the West Side.",
+    buttons: [["to be cont...", "advanceTo(scenario.g)"]]
+   },
+    thirty: {
+    image: ".jpg",
+    text: "You ignore the annoying little man and continue on your shortcut to the West side. Alligator shouts curses at you as you wind down the narrow street.",
+    buttons: [["Continue", "advanceTo(scenario.g)"]]
+   },
+    a: {
+    image: ".jpg",
+    text: "You accept Alligator Brown's proposal. You become his new Bottom Bitch and rebuild his brothel better than before! After whoring yourself out for a few years and keeping the other bitches in line you have saved enough to start your own puppet show. You are very relieved as your ass, and cock and balls are in desperate need of a vacation. You approach Alligator Brown on the roof of the brothel. He is wearing a purple alligator skin tuxedo with white loafers. He puffs on a cigar while looking into the night sky. You walk near and Alligator says 'Bottom bitch! You got my money ho?'",
+    buttons: [["to be cont...", "advanceTo(scenario.b)"]]
+   },
+    b: {
+    image: ".jpg",
+    text: "You turn the conversation and say 'Alligator, I have actually come to ask you for MY money. You know, the money you have been saving for me? I think I have enough to finally start my puppet show.' Alligator angrily throws his cigar onto the flat tar roof and grinds into it firmly with his white loafer and says 'Aint nobody leaving Alligator Brown bottom bitch! Now where's my motherfucking money ho!? You know what I'm sayin'!?' His words and actions infuriate you! <br> <br>BOSS FIGHT GO! <br> <br> Alligator Brown brings up his puny fists in front of him.",
+    buttons: [["Punch him off the roof", "advanceTo(scenario.c)"],["Kick him off the roof", "advanceTo(scenario.d)"]]
+   },
+    c: {
+    image: ".jpg",
+    text: "You take one swing at the little bitch, connecting hard he goes sailing off the roof! Down below in the dark you hear a wet splatting sound. A lonely cat can be heard in the night. You are free of Alligator Brown!",
+    buttons: [["Continue", "advanceTo(scenario.e)"]]
+   },
+    d: {
+    image: ".jpg",
+    text: "You bring your leg back and punt him off the roof! He goes sailing into the brick building across the street. The sound of breaking bones is sickening as he connects. He peels almost comically off the building and splats on the sidewalk below. You are free of Alligator Brown!",
+    buttons: [["Continue", "advanceTo(scenario.e)"]]
+   },
+    e: {
+    image: ".jpg",
+    text: "You break into Alligator Brown's safe finding over 100,000 Golden Gears. The highest form of currency in the Empire! You take the Lion's share for yourself and distribute a fair share to the other Ho's. They all thank you and leave to get a fresh start, away from the alley. You have more than enough to start a grand puppet theater! Your Journey wasn't quite what you thought it would be but it's sort of a Happy Ending. You just wish you could tighten your butthole back up. <br> <br> (Your journey ends here)",
+    buttons: [["Congrats!", "advanceTo(scenario.f)"]]
+   },
+    f: {
+    image: ".jpg", 
+    text: "You may not be a pimp but your pimp hand is strong! <br> <br> Great Job, Your name <br> <br> Your Player Rank is <br> <br> Power Bottom",
+    buttons: [["The End", "advanceTo(scenario.two)"]]
+   },
+    g: {
+    image: ".jpg",
+    text: "Less than an hour later you finally leave Blue Alley behind. Not much farther to Murray's apartment you tell yourself while you ignore your aching feet. You arrive at Murray's town house by mid afternoon. He should be up by now you think, most likely doing his hair and makeup for tonight's cabaret show. You ring the bell and wait... A few moments later a chubby man in a fuzzy bathrobe answers the door. 'Tokyo!' he excitingly exclaims as he lets you in. 'Sit down my friend!' 'Coffee?' he queries as he pulls out a seat. You happily agree to coffee. Murray pours two cups into delicate China cups and asks you 'What brings you around?' You proceed to tell Murray of your adventures. He sits entranced as you weave your tale munching on biscotti. After you finish your story he says quite flatly 'Well, that settles it. Your staying with me honey!' You become Murray's roommate until you can save enough to start your puppet show which is hailed a success by audiences and critics alike. You did it! <br> <br> (Your journey ends here)",
+    buttons: [["Congrats!", "advanceTo(scenario.h)"]]
+   },
+    h: {
+    image: ".jpg",
+    text: "You're a well liked guy, Tokyo! <br> <br> Great Job, Your name <br> <br> Your Player Rank is <br> <br> Friendship is Magic",
+    buttons: [["The End", "advanceTo(scenario.two)"]]
+   },
+    i: {
+    image: ".jpg",
+    text: "You tell the stranger your story over pie and coffee. He sets his knife and fork down and sips his coffee as he listens intently. 'What a story!'. He exclaims. 'The names Melvin Black, reporter from the Turbine City Gazette! Mind if I interview you some more and write this story up for tomorrow's edition!?' He reaches out his hand and says 'And you are?'",
+    buttons: [["Continue", "advanceTo(scenario.j)"]]
+   },
+    j: {
+    image: ".jpg",
+    text: "You grasp his small hand and warmly say 'Tokyo Sexwhale, Mr. Black' Melvin smiles and says 'Please, 'Mr. Black' is my father!' 'And please, call me 'Mel'. You oblige and begin to tell Mel your story and about your current situation. You finish up just before the early birds start sitting down for their blue plate specials and bottomless coffee refills. Mel picks up your check and says 'Thanks Tokyo! That was a swell story! Say? Would you be interested in making some easy money? Tomorrow morning I'm heading down to the jungle floor with some truffle hunter's to take some pictures and write a story on the industry. I have a guy I usually hire for protection on dangerous assignments but I find you much more interesting, and you are a hell of a lot bigger. What do you say?'",
+    buttons: [["Accept Mel's offer", "advanceTo(scenario.two)"],["Politely decline, continue to the West Side", "advanceTo(scenario.k)"]]
+   },
+    k: {
+    image: ".jpg",
+    text: "You thank Mel for his kindness and look forward to seeing your interview in tomorrow's Turbine City Gazette but you have got to get to your friends. You exit the diner and find a trolley stop nearby. You dig in your coin purse finding just enough for a Trolley Ride across the city. A bright yellow trolley screeches to a halt in front of the stop and you hustle on with the rest of the riders, ducking your head all the while. The trolley glides right past Blue Alley. You sure are glad you don't have to walk through that place! A man is likely to get harasses in a place like that! The trolley stop is just across the street from your friend Murray's townhouse. What luck! You head over and ring the bell...",
+    buttons: [["Continue", "advanceTo(scenario.l)"]]
+   },
+    l: {
+    image: ".jpg",
+    text: "...A few moments later a chubby man in a fuzzy bathrobe answers the door. 'Tokyo!' he excitingly exclaims as he lets you in. 'Sit down my friend!' 'Coffee?' he queries as he pulls out a seat. You happily agree to coffee. Murray pours two cups into delicate China cups and asks you 'What brings you around?' You proceed to tell Murray of your adventures. He sits entranced as you weave your tale munching on biscotti. After you finish your story he says quite flatly 'Well, that settles it. Your staying with me honey!' You become Murray's roommate until you can save enough to start your puppet show which is hailed a success by audiences and critics alike. You did it! <br> <br> (Your journey ends here)",
+    buttons: [["to be cont...", "advanceTo(scenario.h)"]]
+   },
+    m: {
     image: ".jpg",
     text: "You fall back asleep despite the loud noise in the kitchen. You awake several hours later to the sounds of what you think to be a hog coming from your kitchen.",
     buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
    },
-    twentyseven: {
+    n: {
+    image: ".jpg",
+    text: "You fall back asleep despite the loud noise in the kitchen. You awake several hours later to the sounds of what you think to be a hog coming from your kitchen.",
+    buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
+   },
+    twentyeight: {
+    image: ".jpg",
+    text: "You fall back asleep despite the loud noise in the kitchen. You awake several hours later to the sounds of what you think to be a hog coming from your kitchen.",
+    buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
+   },
+    twentyeight: {
+    image: ".jpg",
+    text: "You fall back asleep despite the loud noise in the kitchen. You awake several hours later to the sounds of what you think to be a hog coming from your kitchen.",
+    buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
+   },
+    twentyeight: {
+    image: ".jpg",
+    text: "You fall back asleep despite the loud noise in the kitchen. You awake several hours later to the sounds of what you think to be a hog coming from your kitchen.",
+    buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
+   },
+    twentyeight: {
+    image: ".jpg",
+    text: "You fall back asleep despite the loud noise in the kitchen. You awake several hours later to the sounds of what you think to be a hog coming from your kitchen.",
+    buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
+   },
+    twentyeight: {
+    image: ".jpg",
+    text: "You fall back asleep despite the loud noise in the kitchen. You awake several hours later to the sounds of what you think to be a hog coming from your kitchen.",
+    buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
+   },
+    twentyeight: {
+    image: ".jpg",
+    text: "You fall back asleep despite the loud noise in the kitchen. You awake several hours later to the sounds of what you think to be a hog coming from your kitchen.",
+    buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
+   },
+    twentyeight: {
+    image: ".jpg",
+    text: "You fall back asleep despite the loud noise in the kitchen. You awake several hours later to the sounds of what you think to be a hog coming from your kitchen.",
+    buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
+   },
+    twentyeight: {
     image: ".jpg",
     text: "You fall back asleep despite the loud noise in the kitchen. You awake several hours later to the sounds of what you think to be a hog coming from your kitchen.",
     buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
