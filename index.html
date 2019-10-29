@@ -453,44 +453,188 @@ var scenario = {
     p: {
     image: ".jpg",
     text: "You awake on the comfortable leather couch to the smells of coffee and bacon. The room is dimly lit and you can hear the sounds of silverware being shuffled and the sizzle of the bacon as Mel rummages around in the kitchen. You lie there for a few minutes longer resisting the urge to get up and pee. You hear footsteps cross the floor, Mel's clean shaven face peers over the back of the couch. He says in just above a whisper 'Its nearly dawn, why don't you wash up and join me for breakfast Tokyo?' You finally rise and take a few steps to the water closet. You take care of business, wash up a bit and head to the kitchen. Over a breakfast of Condor eggs and fattened boar bacon Mel says around of toast and yolk 'So, we are taking the first gondola down to the jungle floor at first light in about an hour. The gondola station is only a 20 minute walk so we have plenty of time.' You finish up your breakfasts leaving the dishes to soak in soapy water, down the last of your coffee and head out..<br> <br> ...For Adventure!",
-    buttons: [["to be cont...", "advanceTo(scenario.q)"]]
+    buttons: [["Adventure ho!", "advanceTo(scenario.q)"]]
    },
     q: {
     image: ".jpg",
     text: "You exit Mel's apartment building into a cold, dark morning in Turbine City. Beyond the gas lamps starlight twinkles above as you walk down the quiet sidewalks toward the gondola. You arrive the gondola a short while later and find a motley assortment of truffle hunters milling around with their hogs or de-tusked boars. You had read in Mel's book that truffle hunting with a boar is far more effective but can potentially be dangerous, hence the removal of the tusks, boars also have the unfortunate habit of eating the valuable truffles rather than just finding them. Pigs on the other hand are a bit more docile. Not to mention Turbine City ordinance does not allow 'tusked' boars within the city. You follow Mel to a bench nearby and sit down near a dark skinned man with a wide brimmed hat. Sitting at his feet is a beautiful black hog with a shiny black coat. He looks over and smiles a toothy gold grin. It's quite obvious he is a seasoned, well paid hunter by evidence of his dental work. He says in a slow, spicy accent 'You guyz don't looking like ze truffle hunters, you goin' sightseeing zis morn'?'",
+    buttons: [["Tell him you are journalists", "advanceTo(scenario.dd)"],["Lie and agree with his assumptions", "advanceTo(scenario.cc)"],["Whoop his ass", "advanceTo(scenario.r)"]]
+   },
+    r: {
+    image: ".jpg",
+    text: "You decide to flex your muscle and do the job for which you were hired. You spring to your feet, take 2 steps and lift him by the shirt off the bench. He is quite surprised and begins screaming for help! The other truffle hunters look on with genuine surprise at this seemingly unprovoked attack. You hold him off the ground while deciding how the ass whooping should go while his black pig squeals wildly at your feet.",
+    buttons: [["Turn him around and give him a wedgie", "advanceTo(scenario.s)"],["Throw him to the ground and stomp him good", "advanceTo(scenario.w)"],["Drop him to his feet and whoop em!", "advanceTo(scenario.x)"]]
+   },
+    s: {
+    image: ".jpg",
+    text: "You decide a wedgie is the best way to do this. You easily rotate him around, his white underwear pealing from under his work pants. You work both hands down to his beltline and pull up, HARD. He lets out a pained squeak as you hear his underwear rip. He falls to the ground grabbing his crotch, weeping in the dirt. You believe your point has been proven. Mel looks on aghast. He splutters out ' Tokyo! What the hell are you doing!? I think you better leave. You are fired.'",
+    buttons: [["Slink away ashamed", "advanceTo(scenario.u)"],["Whoop Mel's ass", "advanceTo(scenario.t)"]]
+   },
+    t: {
+    image: ".jpg",
+    text: "In your riled state you decide Mel also needs an ass whooping. He puts up his dukes as you turn your attention to him. You clench your fists, preparing the whooping. Before you can land your first swing you feel a sharp blow to the back of the head from one of the other truffle hunters. Everything goes black and you wake up in a jail cell. At least you have the next year or so to think about what you have done. (your journey ends here)",
+    buttons: [["You got jail!", "advanceTo(scenario.two)"]]
+   },
+    u: {
+    image: ".jpg",
+    text: "You look at the hapless truffle hunter sobbing in the dirt with his ruined underwear wedged firmly into his ass. His black hog nuzzles him with his nose with sadness and concern in his eyes. A sudden wash of embarrassment washes over you. You back away slowly, turn on your heel and slink away into the early morning of Turbine City. You find the nearest Trolley stop and wait. You board the yellow trolley, pay for your ride, and sit in silence until you reach the West Side.",
+    buttons: [["You made Snuffles sad!", "advanceTo(scenario.v)"]]
+   },
+    v: {
+    image: ".jpg",
+    text: "You exit the trolley and head to your friend, Murray's street. Not much farther to Murray's apartment you tell yourself while you ignore your aching feet. You arrive at Murray's town house by mid afternoon. He should be up by now you think, most likely doing his hair and makeup for tonight's cabaret show. You ring the bell and wait... A few moments later a chubby man in a fuzzy bathrobe answers the door. 'Tokyo!' he excitingly exclaims as he lets you in. 'Sit down my friend!' 'Coffee?' he queries as he pulls out a seat. You happily agree to coffee. Murray pours two cups into delicate China cups and asks you 'What brings you around?' You proceed to tell Murray of your adventures. He sits entranced as you weave your tale munching on biscotti. After you finish your story he says quite flatly 'Well, that settles it. Your staying with me honey!' You become Murray's roommate until you can save enough to start your puppet show which is hailed a success by audiences and critics alike. You did it! But you will never forget your shame at how you treated the poor miner and his hog<br> <br> (Your journey ends here)",
+    buttons: [["Congrats", "advanceTo(scenario.two)"]]
+   },
+    w: {
+    image: ".jpg",
+    text: " You throw the little truffle hunter into the dirt and are about to stomp him when a loud gun shot can be heard! You look around at everyone else who in turn are looking at you. Their mouths hang open in a mix of horror and surprise. Mel says in a flat, sad tone 'Tokyo, my God. He gestures down to your belly. You follow his gaze and realize you have a hole in your gut the size of an orange that is pouring blood into the dirt at your feet. You become light-headed and drop to your knees. Your head swirls into darkness. (Your journey ends here.)",
+    buttons: [["He dead", "advanceTo(scenario.two)"]]
+   },
+    x: {
+    image: ".jpg",
+    text: "You drop the truffle hunter to his feet and put up your dukes. You begin to close in when he quickly lunges forward toward you and quickly back, not seeming to have touched you at all. You attempt to swing at him but find you are suddenly sluggish. Your world becomes a fuzzy blur, like you have been drinking. Through double vision you can see a small dart in your chest. The last thought you have before blacking out is 'tranquilizer dart'... You wake up in a stinking dumpster.",
+    buttons: [["You gonna lay in there all day?", "advanceTo(scenario.y)"]]
+   },
+    y: {
+    image: ".jpg",
+    text: "You crawl out of the dumpster and find you are in the staging area of the trash cliffs dumping area. You look around to find you are in the center of a 'dumpster maze', hundreds of dumpsters surround you waiting to be emptied off the cliffs to the Jungle Dark below. You pause for a moment and realize you are in the southern most part of Turbine City. You know it's going to be a few hours journey back on foot as there will be no public transportation to be found anywhere near hear. You work your way through the maze of stinking metal boxes toward the gas-lit streets of Turbine City. You must have been knocked out all day you ponder as you trudge through foul smelling mud. Half way through your journey a fat raccoon blocks your path.",
+    buttons: [["Backtrack and go around", "advanceTo(scenario.z)"],["Whoop its ass", "advanceTo(scenario.bb)"]]
+   },
+    z: {
+    image: ".jpg",
+    text: "You backtrack a little way and manage to avoid the raccoon making your way back to the city proper within the hour. You find the nearest Trolley stop and manage a ride to the West side.",
+    buttons: [["Probably a good idea", "advanceTo(scenario.aa)"]]
+   },
+    aa: {
+    image: ".jpg",
+    text: "You exit the trolley and head to your friend, Murray's street. Not much farther to Murray's apartment you tell yourself while you ignore your aching feet. You arrive at Murray's town house by mid afternoon. He should be up by now you think, most likely doing his hair and makeup for tonight's cabaret show. You ring the bell and wait... A few moments later a chubby man in a fuzzy bathrobe answers the door. 'Tokyo!' he excitingly exclaims as he lets you in. 'Sit down my friend!' 'Coffee?' he queries as he pulls out a seat. You happily agree to coffee. Murray pours two cups into delicate China cups and asks you 'What brings you around?' You proceed to tell Murray of your adventures. He sits entranced as you weave your tale munching on biscotti. After you finish your story he says quite flatly 'Well, that settles it. Your staying with me honey!' You become Murray's roommate until you can save enough to start your puppet show which is hailed a success by audiences and critics alike. You did it! But you will never forget to not mess with truffle miners!<br> <br> (Your journey ends here)",
+    buttons: [["Nice run!", "advanceTo(scenario.two)"]]
+   },
+    bb: {
+    image: ".jpg",
+    text: "You clench your meaty fists and prepare to whoop this raccon's ass back to the Jungle Dark! You come within striking distance when you are suddenly swarmed by a dozen raccoons! Their tiny sharp teeth and claws dig into your flesh. You howl as one of them begins to crawl up your ass! (*The human anus can stretch up to 7 inches and a raccoon can fit into a hole roughly 4 inches in diameter, look it up.) You manage to pull the spelunking raccoon from your ass and scare the rest of the furred attackers away. You are covered in tiny bleeding scratches and bites. You collapse a short while later. <br> <br> ...You awake but you are not quite yourself. A rage has overcome you. Kill kill kill! Your mind races as you go in search of anything to kill. A thick froth hangs out of your mouth as you rub! You eventually find your way back to the city and go on a rabid slaughter of anyone you can find. By the time they put you down you have murdered 37. (Your journey ends here)",
+    buttons: [["37! Hey you, get back here", "advanceTo(scenario.two)"]]
+   },
+    cc: {
+    image: ".jpg",
+    text: "You lie to the truffle hunter and agree with his assumption that you are sight seeing. You feel this was the best course of action for the security of the assignment. Mel looks at you quizzically but seems to trust your judgement.",
+    buttons: [["Ok then", "advanceTo(scenario.ee)"]]
+   },
+    dd: {
+    image: ".jpg",
+    text: " You turn to the friendly truffle hunter and explain you are on assignment from the Turbine City Gazette to write a story about the truffle hunting industry. He smiles as you say this. Mel chimes in 'Say, would you mind if we follow you around a little? Maybe get a couple pictures and a brief interview? And, oh where are my manners!? My name is Mel Black. This here is Tokyo Sexwhale. And you are?...' The truffle hunter brightens and says 'My name iz Hector, thiz be my hog. His name is Snuffles. He finding ze truffles.' 'Please to meet ya' Hector!' Mel quickly shoots back.",
+    buttons: [["Continue", "advanceTo(scenario.ee)"]]
+   },
+    ee: {
+    image: ".jpg",
+    text: "The truffle hunter says through a golden grin 'Yez. You follow me. We take picture.' Mel says 'Hot damn!' and removes a notepad and pencil from his breast pocket. He starts asking all the standard questions; Hector's age, how long has he been truffle hunting, etc. Before Hector can answer a large gondola lumbers over the cliff railing and slams to a controlled stop 10 feet away. The gondola is seemlesly painted a perfect sky blue. You remember reading in Mel's truffle book that the gondolas were painted this color so the tribes in the Jungle Dark could not see them descend. There is argument amongst scholars if the 'tribes' exist anymore. There has been no official reports in decades of any tribal activity in more than 50 years. The urban myths persist about a tribe of savage men who ride around on giant, overpowered 'mowing machines', or the stories of giant amazon women running around topless making sex slaves out of any man they would encounter. So, nothing credible. <br> <br> You duck your head and board the gondola. You and Mel sit near Hector so he can continue his interview.",
+    buttons: [["Off we go", "advanceTo(scenario.ff)"]] 
+    },
+    ff: {
+    image: ".jpg",
+    text: "The gondola begins it's slow decent to the jungle floor, rocking gently in the wind creaking as you go. Mel rapid fires question after question getting response after response of muddled English back. <br> <br> After a few hours the gondola comes to a stop on a concrete slab nestled in the jungle floor. The gondola driver exits the cabin and proceeds to unlock the large sliding door. Everyone files out and begins to follow a different trail into the jungle, their beasts leading the way. <br> <br> 'Before we set out let's pose for a picture! What do you say fella's!?'",
+    buttons: [["Agree to the photo", "advanceTo(scenario.two)"],["Insist we should get on with the assignment", "advanceTo(scenario.oo)"],["Whoop Mel's ass", "advanceTo(scenario.gg)"]]
+   },
+    gg: {
+    image: ".jpg",
+    text: "'Nobody takes my photo!' you think as Mel presumptuously begins setting up his tripod. He is about to mount his boxy camera on top when you walk over to confront him. He looks up sheepishly and says 'Tokyo'?",
+    buttons: [["Bash Mel's head with the tripod then shove it up his ass", "advanceTo(scenario.hh)"],["Punch him good", "advanceTo(scenario.ii)"],["Bash Mel using Snuffles like a club", "advanceTo(scenario.nn)"]]
+   },
+    hh: {
+    image: ".jpg",
+    text: "You grab the tripod away from Mel and bash him over the head. An audible 'crunch' can be heard as you connect. He stands there in a daze, blood starts to trickle out of his nose and ears. He goes cross-eyed and begins to plead in some manner of brain damaged speech. Blood fills his mouth as he gurgles out nonsense. Mel collapses on the ground convulsing. You then proceed to pull his pants down and shove the tripod up his ass. The WHOLE tripod. Hector and Snuffles have already fled leaving you alone and angry. You run off into the jungle eventually becoming feral. God speed jungle man! (Your journey ends here.)",
+    buttons: [["Wow. Just... wow", "advanceTo(scenario.two)"]]
+   },
+    ii: {
+    image: ".jpg",
+    text: "You punch Mel good! He drops his camera and falls to the thick blanket of ferns at your feet. 'Tokyo!? What happened!? What are you doing? He sees you are not quite finished with him and runs off into the jungle. <br> <br> Hector and Snuffles have already run off. ",
+    buttons: [["Pursue Mel", "advanceTo(scenario.jj)"],["Return to the Gondola", "advanceTo(scenario.kk)"]]
+   },
+    jj: {
+    image: ".jpg",
+    text: " You pursue Mel into the jungle... Hours later you find that you are hopelessly lost. You wander in a dark jungle until you see a campfire up ahead. As you get closer you see three fallen logs set around the fire and an animal spit-roasting over the flames with nobody to be seen. Hunger gets the best of you as you get closer. You are about to pull a hunk of sizzling meat from the roasting carcass when 3 tall, buxom women come crashing through the foliage around you, spears at the ready! 'Who you!?' The largest one exclaims, her large perky breasts pointing in your direction. You are about to answer when the other two amazons flank, then quickly hog tie you. You are captured and made a sex slave to a tribe of amazonians. This might just be the best ending yet! (Your journey ends here.)",
+    buttons: [["Better than bottom bitch!", "advanceTo(scenario.two)"]]
+   },
+    kk: {
+    image: ".jpg",
+    text: "You return to the gondola. You enter and sit, waiting for it to return to Turbine City. Many hours later the truffle hunters return, each with sacks of the prized fungus. They are tired but happy. You are not. Half way back to Turbine City you feel a terrible urge upon you. You never caught Mel. Somebody is going to pay!",
+    buttons: [["Whoop everybody's ass", "advanceTo(scenario.ll)"],["Throw yourself off the gondola", "advanceTo(scenario.mm)"]]
+   },
+    ll: {
+    image: ".jpg",
+    text: "You let out a primal scream and whoop everybody's ass aboard the gondola. The driver was able to get a telegraph to the Constabils so upon arrival you are taken into custody and thrown into jail. You await your day in court sitting in a cold, gray cell. (Your journey ends here.)",
+    buttons: [["Whooping ass sure ends poorly", "advanceTo(scenario.two)"]]
+   },
+    mm: {
+    image: ".jpg",
+    text: " The anger you feel is overwhelming but you really don't want to hurt anyone. With your mighty strength you force the gondola door open and throw yourself into the night sky. You close your eyes just before you splatter into Oblivion. (Your journey ends here)",
+    buttons: [["How noble", "advanceTo(scenario.two)"]]
+   },
+    nn: {
+    image: ".jpg",
+    text: "You grab Snuffles away from Hector and are about to bash Mel when you feel a sharp sting on the back of you ankle. You drop Snuffles and fall to one knee. You are panicked as you realize your Achilles tendon has been cut. Hector moves around to face you, bloody knife in hand. His face is dark as he pushes the knife into your eye puncturing your brain. Never mess with a man's truffle hog. (Your journey ends here)",
+    buttons: [["Yeah, it's Snuffles", "advanceTo(scenario.two)"]]
+   },
+    oo: {
+    image: ".jpg",
+    text: "You politely decline the photo op thinking it better to take full advantage of all the daylight possible. Mel seems a bit surprised but can't argue that. The three of you move along down the trail, Snuffles leading the way. Mel continues to interview Hector as you walk into the thickening plants around you. Not ten minutes into your stroll Snuffles' snout begins to twitch. Snuffles begins to excitedly squeal and pull hard on his leash. Hector digs in his heals and allows Snuffles to lead, slowly. You walk with the group until you come to a clearing in a shady part of the jungle. In the beams of sunlight you can see that the ground is covered in plump truffles. Hector smiles broadly and exclaims 'My God! I iz rich!' as he begins shoving truffles into his sack as fast as he can. Mel follows suit and starts to give Hector a handjob. You are about to kneel down and pick up the mottled black mushrooms when you hear a terrible sound crashing through the jungle toward you. It sounds like... <br> <br> A thousand large, angry bees heading toward you!",
     buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
    },
     twentyeight: {
     image: ".jpg",
-    text: "You fall back asleep despite the loud noise in the kitchen. You awake several hours later to the sounds of what you think to be a hog coming from your kitchen.",
+    text: "",
     buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
    },
     twentyeight: {
     image: ".jpg",
-    text: "You fall back asleep despite the loud noise in the kitchen. You awake several hours later to the sounds of what you think to be a hog coming from your kitchen.",
+    text: "",
     buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
    },
     twentyeight: {
     image: ".jpg",
-    text: "You fall back asleep despite the loud noise in the kitchen. You awake several hours later to the sounds of what you think to be a hog coming from your kitchen.",
+    text: "",
     buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
    },
     twentyeight: {
     image: ".jpg",
-    text: "You fall back asleep despite the loud noise in the kitchen. You awake several hours later to the sounds of what you think to be a hog coming from your kitchen.",
+    text: "",
     buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
    },
     twentyeight: {
     image: ".jpg",
-    text: "You fall back asleep despite the loud noise in the kitchen. You awake several hours later to the sounds of what you think to be a hog coming from your kitchen.",
+    text: "",
     buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
    },
     twentyeight: {
     image: ".jpg",
-    text: "You fall back asleep despite the loud noise in the kitchen. You awake several hours later to the sounds of what you think to be a hog coming from your kitchen.",
+    text: "",
     buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
    },
-    
+    twentyeight: {
+    image: ".jpg",
+    text: "",
+    buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
+   },
+    twentyeight: {
+    image: ".jpg",
+    text: "",
+    buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
+   },
+    twentyeight: {
+    image: ".jpg",
+    text: "",
+    buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
+   },
+    twentyeight: {
+    image: ".jpg",
+    text: "",
+    buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
+   },
+    twentyeight: {
+    image: ".jpg",
+    text: "",
+    buttons: [["to be cont...", "advanceTo(scenario.two)"],["to be cont...", "advanceTo(scenario.two)"]]
+   },
     
     
     
